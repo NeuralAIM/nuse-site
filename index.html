@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nuse — музыка, которая понимает вас</title>
+<meta name="description" content="Nuse — музыкальный плеер с нейросетью. NAI слушает треки за вас и ставит те, что понравятся: бесконечная волна, текст песен по словам с переводом, непрерывный микс «Драйв», управление с любого устройства.">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://nuse.pro/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/Ubuntu-Bold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/Ubuntu-Medium.ttf" as="font" type="font/ttf" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nuse">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://nuse.pro/">
+<meta property="og:title" content="Nuse — музыка, которая понимает вас">
+<meta property="og:description" content="Нейросеть слушает треки за вас и ставит те, что понравятся.">
+<meta property="og:image" content="https://nuse.pro/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body id="top">
+
+<header class="head" id="head">
+  <a class="head-brand" href="#top" aria-label="Nuse"><svg viewBox="0 0 63 78" aria-hidden="true"><path d="M0.37 77.94V12.23L63 72.59 15.56 42.79l7.05 6.88v14.52z"/><path d="M62.63 0v65.71L0 5.35l47.43 29.8-7.04-6.88V13.75z"/></svg></a>
+  <nav class="head-tabs" id="tabs" aria-label="Разделы"><i class="head-tabs-lens"></i><a href="#simple" data-sec="simple">Интерфейс</a><a href="#wave" data-sec="wave">Волна</a><a href="#lyrics" data-sec="lyrics">Текст</a><a href="#player" data-sec="player">Плеер</a><a href="#drive" data-sec="drive">Драйв</a><a href="#stems" data-sec="stems">Голос</a><a href="#speed" data-sec="speed">Скорость</a><a href="#devices" data-sec="devices">Устройства</a></nav>
+  <a class="btn head-go" href="https://app.nuse.pro">Открыть плеер</a>
+</header>
+
+<main>
+  <!-- ═══ hero ═══ -->
+  <section class="hero" id="hero">
+    <div class="stage hero-stage" data-amb="330,48,50">
+      <div class="glow-wrap"><canvas class="wv-glow" data-glow="hero" aria-hidden="true"></canvas></div>
+      <div class="hero-center">
+        <a class="wv-big rv" href="https://app.nuse.pro" aria-label="Открыть плеер Nuse"><span class="wv-big-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg></span>Nuse</a>
+        <h1 class="hero-tag rv" style="--rd:.1s">Музыка, которая понимает вас.</h1>
+        <p class="hero-sub rv" style="--rd:.18s">Нейросеть слушает треки за вас и ставит те, что понравятся.</p>
+        <div class="hero-btns rv" style="--rd:.26s">
+          <a class="btn lg" href="https://app.nuse.pro"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>Открыть плеер</a>
+          <a class="wv-pill lg" href="#wave"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>Смотреть</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 01 · Интерфейс ═══ -->
+  <section class="simple" id="simple">
+    <div class="simple-head rv">
+      <div class="eyebrow"><b>01</b>Интерфейс</div>
+      <h2>Ничего лишнего.</h2>
+      <p>Две вкладки — «Моя волна» и «Библиотека», поиск и плеер внизу. Всё остальное появляется, когда нужно. Разобраться — дело секунды.</p>
+    </div>
+    <div class="shots rv" style="--rd:.1s">
+      <img class="shot-desk" src="img/ui-desktop.jpg" width="1440" height="900" alt="Nuse на компьютере: вкладки «Моя волна» и «Библиотека», поиск, живой экран с обложкой и текстом песни, плеер внизу" loading="lazy" decoding="async">
+      <img class="shot-phone" src="img/ui-phone.jpg" width="390" height="844" alt="Nuse на телефоне: живой экран, плеер и вкладки внизу" loading="lazy" decoding="async">
+    </div>
+    <ul class="simple-notes rv" style="--rd:.15s">
+      <li><b>Две вкладки</b><span>Волна и библиотека — больше ничего искать не нужно</span></li>
+      <li><b>Живой экран</b><span>Обложка, текст и сияние в цвет трека</span></li>
+      <li><b>Плеер всегда под рукой</b><span>Одна строка внизу — и на компьютере, и на телефоне</span></li>
+    </ul>
+  </section>
+
+  <!-- ═══ 01 · Моя волна ═══ -->
+  <section class="feat" id="wave">
+    <div class="feat-text rv">
+      <div class="eyebrow"><b>02</b>Моя волна</div>
+      <h2>Бесконечно.<br>И&nbsp;точно в&nbsp;цель.</h2>
+      <p>Поток, который не заканчивается и не промахивается. NAI оценивает каждый трек до того, как он зазвучит.</p>
+    </div>
+    <div class="feat-demo rv" style="--rd:.12s">
+      <div class="stage demo-wave" id="dWave" data-amb="330,48,50" aria-hidden="true">
+        <div class="glow-wrap"><canvas class="wv-glow" data-glow="wave"></canvas></div>
+        <div class="dw-in">
+          <div class="dw-cover"><i class="cv"></i></div>
+          <div class="wv-tt">
+            <div><div class="wv-ttl">Ночной город</div><div class="wv-who">Moonlane</div></div>
+            <span class="wv-like"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9.3A4 4 0 0 1 12 7.6 4 4 0 0 1 19 10.7C19 15.6 12 20 12 20z"/></svg></span>
+          </div>
+          <div class="dw-nai"><span class="ml-badge">92%</span><span class="np-nai">Этот должен зайти</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 02 · Текст по словам ═══ -->
+  <section class="feat flip" id="lyrics">
+    <div class="feat-text rv">
+      <div class="eyebrow"><b>03</b>Текст по словам</div>
+      <h2>Каждое слово&nbsp;—<br>в&nbsp;такт.</h2>
+      <p>Строка загорается вслед за голосом, слово за словом. Протяжное слово заливается плавно — ровно столько, сколько его тянут. Перевод — тут же, под строкой.</p>
+    </div>
+    <div class="feat-demo rv" style="--rd:.12s">
+      <div class="stage demo-lyr" id="dLyr" data-amb="275,46,52" aria-hidden="true">
+        <div class="glow-wrap dim"><canvas class="wv-glow" data-glow="lyr"></canvas></div>
+        <div class="lyr-host"><div class="lyr-box"><div class="lyr-list" id="lyrList"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 03 · Плеер ═══ -->
+  <section class="feat" id="player">
+    <div class="feat-text rv">
+      <div class="eyebrow"><b>04</b>Плеер</div>
+      <h2>Знает<br>заранее.</h2>
+      <p>Ещё до первой ноты NAI знает, насколько трек ваш, кто и когда в нём поёт, где припев и где самое сильное место.</p>
+      <ul class="feat-list"><li><span class="fl-ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 5.6L20 9.3l-4.4 3.9 1.3 5.8L12 16l-4.9 3 1.3-5.8L4 9.3l5.8-.7z"/></svg></span><span>Процент — насколько трек вам понравится</span></li><li><span class="fl-ico"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4"/></svg></span><span>Цвет гребня — кто поёт: девушка, парень или вместе</span></li><li><span class="fl-ico"><svg viewBox="0 0 24 24"><path d="M9 18V6l11-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg></span><span>Припев и самое яркое — в одно касание</span></li><li><span class="fl-ico"><svg viewBox="0 0 24 24"><path d="M5 6l7 6-7 6z"/><path d="M12 6l7 6-7 6z"/></svg></span><span>Спокойное вступление? Сразу к интересному</span></li></ul>
+    </div>
+    <div class="feat-demo rv" style="--rd:.12s">
+      <div class="demo-player-wrap" aria-hidden="true">
+        <div class="player-card" id="dPlayer">
+          <div class="pl-wave"><canvas class="seek-wave" id="pwAll"></canvas><canvas class="seek-wave is-done" id="pwDone"></canvas><div class="pl-marks" id="pwMarks"></div></div>
+          <div class="seek-strip"><div class="seek-fill" id="pwFill"></div><span class="seek-now" id="pwNow">0:00</span><span class="seek-total">3:24</span></div>
+          <div class="pc-top">
+            <div class="cover"><i class="cv"></i></div>
+            <div class="np-meta"><div class="np-title">Ночной город</div><div class="np-artist">Moonlane</div></div>
+            <span class="ml-badge">92%</span>
+          </div>
+          <div class="pc-jumps">
+            <span class="np-jump" id="pwJump"><svg viewBox="0 0 24 24"><path d="M5 6l7 6-7 6z"/><path d="M12 6l7 6-7 6z"/></svg><span>0:34</span></span>
+            <span class="np-jump chorus" id="pwChorus"><svg viewBox="0 0 24 24"><path d="M9 18V6l11-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg><span>Припев 1:12</span></span>
+          </div>
+          <div class="pc-hill" id="pwZone"></div>
+          <div class="pc-row">
+            <div class="pl-wave-btns">
+              <span class="wv-pill"><svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>Настроить</span>
+              <span class="wv-pill"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>Драйв</span>
+            </div>
+            <div class="pl-center">
+              <span class="ctrl big"><svg viewBox="0 0 24 24"><path d="M18 5v14L8 12z"/><path d="M6 5v14"/></svg></span>
+              <span class="ctrl play"><svg viewBox="0 0 24 24"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></span>
+              <span class="ctrl big"><svg viewBox="0 0 24 24"><path d="M6 5v14l10-7z"/><path d="M18 5v14"/></svg></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 04 · Драйв ═══ -->
+  <section class="feat flip" id="drive">
+    <div class="feat-text rv">
+      <div class="eyebrow"><b>05</b>Драйв</div>
+      <h2>Ни секунды<br>тишины.</h2>
+      <p>Драйв подбирает следующий трек и сводит его с текущим точно в такт. Один голос замолкает — вступает следующий. Музыка не прерывается ни на миг.</p>
+      <ul class="feat-list"><li><span class="fl-ico"><svg viewBox="0 0 24 24"><path d="M3 12h3l2-6 4 12 2-6h7"/></svg></span><span>Переход точно по долям — без сбоя ритма</span></li><li><span class="fl-ico"><svg viewBox="0 0 24 24"><path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4"/></svg></span><span>Голоса не наслаиваются: один передаёт слово другому</span></li><li><span class="fl-ico"><svg viewBox="0 0 24 24"><path d="M7 9a3 3 0 1 0 0 6c2.5 0 7.5-6 10-6a3 3 0 1 1 0 6c-2.5 0-7.5-6-10-6z"/></svg></span><span>Бесконечно — пока вы слушаете</span></li></ul>
+    </div>
+    <div class="feat-demo rv" style="--rd:.12s">
+      <div class="stage demo-drive" id="dDrive" data-amb="330,48,50" aria-hidden="true">
+        <div class="glow-wrap"><canvas class="wv-glow" data-glow="drive"></canvas></div>
+        <span class="wv-pill is-on dd-pill"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>Драйв</span>
+        <div class="dd-now"><div class="dd-cover"><i class="cv"></i></div><div class="dd-tt"><div class="wv-ttl" id="ddTtl">Ночной город</div><div class="wv-who" id="ddWho">Moonlane</div></div></div>
+        <div class="dd-tl"><canvas id="ddCv"></canvas><span class="dd-now-line"></span><span class="dd-tag" id="ddTag">переход в такт</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 05 · Голос и минус ═══ -->
+  <section class="feat" id="stems">
+    <div class="feat-text rv">
+      <div class="eyebrow"><b>06</b>Голос и минус</div>
+      <h2>Голос&nbsp;—<br>отдельно.</h2>
+      <p>Нейросеть разделяет любой трек на голос и музыку. Караоке, чистый минус или только вокал — в одно касание.</p>
+    </div>
+    <div class="feat-demo rv" style="--rd:.12s">
+      <div class="stage demo-stem" id="dStem" data-amb="335,60,58" aria-hidden="true">
+        <div class="glow-wrap dim"><canvas class="wv-glow" data-glow="stem"></canvas></div>
+        <div class="stem-lanes">
+          <div class="lane" data-lane="voc"><span class="lane-name">Голос</span><canvas class="lane-cv"></canvas></div>
+          <div class="lane" data-lane="ins"><span class="lane-name">Музыка</span><canvas class="lane-cv"></canvas></div>
+        </div>
+        <div class="menu stem-menu">
+          <div class="sleep-title">Что слушать<small id="stemState">весь трек</small></div>
+          <div class="mi is-active" data-stem="mix">Весь трек</div>
+          <div class="mi" data-stem="voc">Только голос</div>
+          <div class="mi" data-stem="ins">Только минус <small>без голоса</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 06 · Скорость ═══ -->
+  <section class="feat flip" id="speed">
+    <div class="feat-text rv">
+      <div class="eyebrow"><b>07</b>Скорость</div>
+      <h2>Быстрее. Медленнее.<br>Тот же голос.</h2>
+      <p>Любой трек — в sped up или slowed. Темп меняется, тональность остаётся на месте.</p>
+    </div>
+    <div class="feat-demo rv" style="--rd:.12s">
+      <div class="stage demo-speed" id="dSpeed" data-amb="28,70,56" aria-hidden="true">
+        <div class="glow-wrap dim"><canvas class="wv-glow" data-glow="speed"></canvas></div>
+        <div class="sp-read"><span class="sp-val" id="spVal">1×</span><canvas class="sp-cv" id="spCv"></canvas><span class="sp-tone"><i></i>тон голоса — без изменений</span></div>
+        <div class="menu speed-menu">
+          <div class="sleep-title">Скорость<small id="spState">1×</small></div>
+          <div class="mi is-active" data-speed="normal">Обычная</div>
+          <div class="mi" data-speed="slow">Замедленная <small>0.85×</small></div>
+          <div class="mi" data-speed="fast">Ускоренная <small>1.2×</small></div>
+          <div class="speed-pitch"><span>Не менять тон голоса</span><i class="switch is-on"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 07 · Устройства ═══ -->
+  <section class="feat" id="devices">
+    <div class="feat-text rv">
+      <div class="eyebrow"><b>08</b>Устройства</div>
+      <h2>Одна музыка.<br>Все устройства.</h2>
+      <p>Компьютер и телефон — одно целое. Музыка играет на одном, управляете — с любого.</p>
+      <ul class="feat-list"><li><span class="fl-ico"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></span><span>Телефон — пульт: пауза, перемотка, громкость, очередь</span></li><li><span class="fl-ico"><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span><span>«Слушать здесь» — продолжить с того же места</span></li><li><span class="fl-ico"><svg viewBox="0 0 24 24"><path d="M4 12h12"/><path d="m12 6 6 6-6 6"/></svg></span><span>«Включить там» — отправить музыку на другое устройство</span></li><li><span class="fl-ico"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M10 9.5v5l4-2.5z"/></svg></span><span>Клавиши мультимедиа и экран блокировки</span></li></ul>
+    </div>
+    <div class="feat-demo rv" style="--rd:.12s">
+      <div class="stage demo-dev" id="dDev" data-amb="205,52,52" aria-hidden="true">
+        <div class="glow-wrap"><canvas class="wv-glow" data-glow="dev"></canvas></div>
+        <div class="dev-now"><div class="dw-cover"><i class="cv"></i></div><div class="wv-ttl">Ночной город</div><div class="wv-who">Moonlane</div></div>
+        <div class="remote-strip"><span class="remote-eq"><i></i><i></i><i></i></span><span class="remote-text" id="devStrip">Играет на «Компьютер»: Ночной город — Moonlane</span><span class="remote-go">пульт</span></div>
+        <div class="dev-panel">
+          <div class="dev-title">Чем управлять</div>
+          <div class="dev-pick">
+            <div class="dev-pick-row is-on" data-dev="pc"><span class="dev-ico">🖥</span><span class="dev-pick-txt"><b>Это устройство (Компьютер)</b><small>играет · Ночной город</small></span><i class="dev-pick-dot"></i></div>
+            <div class="dev-pick-row" data-dev="phone"><span class="dev-ico">📱</span><span class="dev-pick-txt"><b>Телефон</b><small>на паузе · Ночной город</small></span><i class="dev-pick-dot"></i></div>
+          </div>
+          <div class="dev-title">Устройства<small>это: Компьютер</small></div>
+          <div class="dev-card"><div class="dev-head"><span class="dev-ico">📱</span><span class="dev-name">Телефон</span><span class="dev-state">на паузе</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ и ещё ═══ -->
+  <section class="more" id="more">
+    <div class="more-head rv"><div class="eyebrow"><b>09</b>И ещё</div><h2>И это<br>ещё не всё.</h2></div>
+    <div class="more-grid"><div class="more-tile rv" style="--rd:0.00s"><span class="mt-ico"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9"/><path d="M7 12a5 5 0 0 1 5-5"/><circle cx="12" cy="12" r="2"/><path d="M21 12a9 9 0 0 0-9-9"/></svg></span><b>Радио по треку</b><span>Бесконечный поток вокруг любой песни.</span></div><div class="more-tile rv" style="--rd:0.05s"><span class="mt-ico"><svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></span><b>Сколько нового</b><span>Новое, поровну или похожее — решаете вы.</span></div><div class="more-tile rv" style="--rd:0.10s"><span class="mt-ico"><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span><b>Импорт</b><span>Яндекс Музыка или список из Spotify, Apple, VK.</span></div><div class="more-tile rv" style="--rd:0.15s"><span class="mt-ico"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4"/></svg></span><b>Поиск голосом</b><span>Скажите название — Nuse найдёт.</span></div><div class="more-tile rv" style="--rd:0.20s"><span class="mt-ico"><svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></span><b>Таймер сна</b><span>Музыка мягко стихнет, когда нужно.</span></div><div class="more-tile rv" style="--rd:0.25s"><span class="mt-ico"><svg viewBox="0 0 24 24"><path d="M5 20V11M12 20V4M19 20v-6"/></svg></span><b>Статистика</b><span>Что и как вы слушаете — наглядно.</span></div></div>
+  </section>
+
+  <!-- ═══ финал ═══ -->
+  <section class="final">
+    <div class="rv">
+      <svg class="mark" viewBox="0 0 63 78" aria-hidden="true"><path d="M0.37 77.94V12.23L63 72.59 15.56 42.79l7.05 6.88v14.52z"/><path d="M62.63 0v65.71L0 5.35l47.43 29.8-7.04-6.88V13.75z"/></svg>
+      <h2>Включите.<br>Дальше — NAI.</h2>
+      <p>Откройте плеер и нажмите «Моя волна».</p>
+      <a class="btn lg" href="https://app.nuse.pro"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>Открыть плеер</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Nuse</span>
+    <a href="https://nuse.pro">nuse.pro</a>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
